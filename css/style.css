@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap');
+*{
+    margin: 0;
+    font-family: "Afacad", sans-serif;
+    font-style: normal;
+}
+body{
+    background-color: black;
+}
+.card{
+    cursor: pointer;
+}
+#first-child{
+     margin-left: 20px; 
+}
+
+.navbar-nav li{
+    margin-right: 20px;
+}
+
+#songs-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+.play-icon1{
+    width: 100%;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+}
+.play-icon1:hover{
+    opacity: 1;
+}
+.title:first-child{
+    color: white;
+    padding-left: 20px;
+    padding-top: 80px;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+.fixed-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.music-player{
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    position: fixed;
+    margin-left: 40%;
+}
+.music-player i{
+    color: rgba(255, 110, 110, 0.853);
+    font-size: 50px;
+    margin-left: 30px;
+    cursor: pointer; 
+}
+.music-player i:hover{
+    color: rgba(255, 110, 110, 0.593);
+}
+.like{
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    position: fixed;
+    margin-left: 1280px;
+}
+.like i{
+    color: rgba(255, 110, 110, 0.853);
+    font-size: 25px;
+    margin-left: 30px;
+    cursor: pointer; 
+}
+.like i:hover{
+    color: rgba(255, 110, 110, 0.593);
+
+}
+.square img{
+    border-radius: 20px;
+    margin-left: 10px;
+
+}
+.text{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.text h8{
+    color: white;
+}
+.text p{
+    color: rgb(157, 154, 154);
+}
+
+/* Default styles */
+
+/* Your existing CSS styles */
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    /* Adjustments for tablets and smaller devices */
+    /* For example, you might want to reduce the width of cards */
+    .card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    /* Adjustments for smartphones and smaller devices */
+    /* For example, you might want to stack cards vertically */
+    .card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  

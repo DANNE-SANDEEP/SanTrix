@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Santrix</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><i class="bi bi-soundwave" style="color: white; font-size: 20px; margin-right: 10px;"></i>  SanTrix</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item" id="first-child">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="discover.html">Discover</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Genre
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#Melody">Melody</a></li>
+                  <li><a class="dropdown-item" href="#Sad">Sad</a></li>
+                  <li><a class="dropdown-item" href="#Party">Party</a></li>
+                  <li><a class="dropdown-item" href="#Tollywood">Tollywood</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <div class="Melody" id="Melody">
+          <div class="title">
+            <h3>Melody</h3>
+          </div>
+          <div id="songs-container">
+            <div class="card" style="width: 15rem; outline: none; border: none; border-radius: 40px;" onclick="playMusic('Songs/Melody Songs/Hrudayama.mp3','Hrudayama', 'Major','images/hrudhayama.jpg')">
+              <img src="images/hrudhayama.jpg" class="card-img-top" alt="Raghuvaran B-tech">
+              <div class="card-body bg-dark" style="color: white; border-radius: 0px 0px 10px 10px; height: 75px;">
+                <h8 class="card-title"><b>Hrudhayama</b></h8>
+                <p class="card-text">Major</p>
+                <div class="play-icon1">
+                  <i class="fas fa-play play-icon"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="width: 15rem; outline: none; border: none; border-radius: 40px;" onclick="playMusic('Songs/Melody Songs/aanandham.mp3','Aanandham Madhike', 'Ishq','images/aanandhammadhike.jpg')">
+              <img src="images/aanandhammadhike.jpg" class="card-img-top" alt="Raghuvaran B-tech">
+              <div class="card-body bg-dark" style="color: white; border-radius: 0px 0px 10px 10px; height: 75px;">
+                <h8 class="card-title"><b>Aanandham Madhike</b></h8>
+                <p class="card-text">Ishq</p>
+                <div class="play-icon1">
+                  <i class="fas fa-play play-icon"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="width: 15rem; outline: none; border: none; border-radius: 40px;" onclick="playMusic('Songs/Melody Songs/Baguntundi.mp3','Baaguntundhi Nuvvu', 'Athidhi Dhevo Bhava','images/baaguntundhi.jpg')">
+              <img src="images/baaguntundhi.jpg" class="card-img-top" alt="Raghuvaran B-tech">
+              <div class="card-body bg-dark" style="color: white; border-radius: 0px 0px 10px 10px; height: 75px;">
+                <h8 class="card-title"><b>Baaguntundhi</b></h8>
+                <p class="card-text">Athidhi Devo Bhava</p>
+                <div class="play-icon1">
+                  <i class="fas fa-play play-icon"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="width: 15rem; outline: none; border: none; border-radius: 40px;" onclick="playMusic('Songs/Melody Songs/Leharaayi.mp3','Leharaayi', 'Most Eligible Bachelor','images/leharayi.jpg')">
+              <img src="images/leharayi.jpg" class="card-img-top" alt="Raghuvaran B-tech">
+              <div class="card-body bg-dark" style="color: white; border-radius: 0px 0px 10px 10px; height: 75px;">
+                <h8 class="card-title"><b>Leharayi</b></h8>
+                <p class="card-text">Most Eligible Bachelor</p>
+                <div class="play-icon1">
+                  <i class="fas fa-play play-icon"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="width: 15rem; outline: none; border: none; border-radius: 40px;" onclick="playMusic('Songs/Melody Songs/pove.mp3','Po Pove Yekantham', 'Raghuvaran B-tech','images/po pove.jpg')">
+              <img src="images/po pove.jpg" class="card-img-top" alt="Raghuvaran B-tech">
+              <div class="card-body bg-dark" style="color: white; border-radius: 0px 0px 10px 10px; height: 75px;">
+                <h8 class="card-title"><b>Po Pove Yekantham</b></h8>
+                <p class="card-text">Raghuvaran B-tech</p>
+                <div class="play-icon1">
+                  <i class="fas fa-play play-icon"></i>
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="Melody" id="Tollywood">
+          <div class="title">
+            <h3>Tollywood Tunes</h3>
+          </div>
+          <div id="songs-container">
+            <div class="card" style="width: 15rem; outline: none; border: none; border-radius: 40px;" onclick="playMusic('Songs/Tollywood Songs/yemunnave.mp3','Yemunnave Pilla', 'Nallamala','images/nalamala.jpg')">
+              <img src="images/nalamala.jpg" class="card-img-top" alt="Raghuvaran B-tech">
+              <div class="card-body bg-dark" style="color: white; border-radius: 0px 0px 10px 10px; height: 75px;">
+                <h8 class="card-title"><b>Yemunnave Pilla</b></h8>
+                <p class="card-text">Nallamala</p>
+                <div class="play-icon1">
+                  <i class="fas fa-play play-icon"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="width: 15rem; outline: none; border: none; border-radius: 40px;"onclick="playMusic('Songs/Tollywood Songs/Chudandi Saaru.mp3','Chudandi Saaru', 'Raghuvaran B-tech','images/po pove.jpg')">
+              <img src="images/po pove.jpg" class="card-img-top" alt="Raghuvaran B-tech">
+              <div class="card-body bg-dark" style="color: white; border-radius: 0px 0px 10px 10px; height: 75px;">
+                <h8 class="card-title"><b>Chudandi Saaru</b></h8>
+                <p class="card-text">Raghuvaran B-tech</p>
+                <div class="play-icon1">
+                  <i class="fas fa-play play-icon"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="width: 15rem; outline: none; border: none; border-radius: 40px;" onclick="playMusic('Songs/Tollywood Songs/ee maya.mp3','Ee maya peremito', 'Ee maya peremito','images/eemaya.jpg')">
+              <img src="images/eemaya.jpg" class="card-img-top" alt="Raghuvaran B-tech">
+              <div class="card-body bg-dark" style="color: white; border-radius: 0px 0px 10px 10px; height: 75px;">
+                <h8 class="card-title"><b>Ee maya peremito</b></h8>
+                <p class="card-text">Ee maya peremito</p>
+                <div class="play-icon1">
+                  <i class="fas fa-play play-icon"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="width: 15rem; outline: none; border: none; border-radius: 40px;" onclick="playMusic('Songs/Tollywood Songs/emo.mp3','Emo Emo', 'Raahu','images/rahu.jpg')">
+              <img src="images/rahu.jpg" class="card-img-top" alt="Raghuvaran B-tech">
+              <div class="card-body bg-dark" style="color: white; border-radius: 0px 0px 10px 10px; height: 75px;">
+                <h8 class="card-title"><b>Emo Emo</b></h8>
+                <p class="card-text">Raahu</p>
+                <div class="play-icon1">
+                  <i class="fas fa-play play-icon"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="width: 15rem; outline: none; border: none; border-radius: 40px;"onclick="playMusic('Songs/Tollywood Songs/manasa.mp3','Manasa Manasa', 'Most Eligible Bachelor','images/leharayi.jpg')">
+              <img src="images/leharayi.jpg" class="card-img-top" alt="Raghuvaran B-tech">
+              <div class="card-body bg-dark" style="color: white; border-radius: 0px 0px 10px 10px; height: 75px;">
+                <h8 class="card-title"><b>Manasa Manasa</b></h8>
+                <p class="card-text">Most eligible bachelor</p>
+                <div class="play-icon1">
+                  <i class="fas fa-play play-icon"></i>
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="Melody" id="Sad">
+          <div class="title">
+            <h3>Sad</h3>
+          </div>
+          <div id="songs-container">
+            <div class="card" style="width: 15rem; outline: none; border: none; border-radius: 40px;" onclick="playMusic('Songs/Sad Songs/chahun.mp3','Chahun Main Ya Naa', 'Aashique 2','images/aashique.jpg')">
+              <img src="images/aashique.jpg" class="card-img-top" alt="Raghuvaran B-tech">
+              <div class="card-body bg-dark" style="color: white; border-radius: 0px 0px 10px 10px; height: 75px;">
+                <h8 class="card-title"><b>Chahun Main Ya Naa</b></h8>
+                <p class="card-text">Aashique 2</p>
+                <div class="play-icon1">
+                  <i class="fas fa-play play-icon"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="width: 15rem; outline: none; border: none; border-radius: 40px;" onclick="playMusic('Songs/Sad Songs/amma.mp3','Amma Amma', 'Raghuvaran B-tech','images/po pove.jpg')">
+              <img src="images/po pove.jpg" class="card-img-top" alt="Raghuvaran B-tech">
+              <div class="card-body bg-dark" style="color: white; border-radius: 0px 0px 10px 10px; height: 75px;">
+                <h8 class="card-title"><b>Amma Amma</b></h8>
+                <p class="card-text">Raghuvaran B-tech</p>
+                <div class="play-icon1">
+                  <i class="fas fa-play play-icon"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="width: 15rem; outline: none; border: none; border-radius: 40px;"onclick="playMusic('Songs/Sad Songs/luck.mp3','Luckanna Maata', 'Raghuvaran B-tech','images/po pove.jpg')">
+              <img src="images/po pove.jpg" class="card-img-top" alt="Raghuvaran B-tech">
+              <div class="card-body bg-dark" style="color: white; border-radius: 0px 0px 10px 10px; height: 75px;">
+                <h8 class="card-title"><b>Luckanna Mate Nillu</b></h8>
+                <p class="card-text">Raghuvaran B-tech</p>
+                <div class="play-icon1">
+                  <i class="fas fa-play play-icon"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="width: 15rem; outline: none; border: none; border-radius: 40px;" onclick="playMusic('Songs/Sad Songs/ori devuda.mp3','Ori Devuda', 'Raghuvaran B-tech','images/po pove.jpg')">
+              <img src="images/po pove.jpg" class="card-img-top" alt="Raghuvaran B-tech">
+              <div class="card-body bg-dark" style="color: white; border-radius: 0px 0px 10px 10px; height: 75px;">
+                <h8 class="card-title"><b>Ori Devuda</b></h8>
+                <p class="card-text">Raghuvaran B-tech</p>
+                <div class="play-icon1">
+                  <i class="fas fa-play play-icon"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="width: 15rem; outline: none; border: none; border-radius: 40px;" onclick="playMusic('Songs/Sad Songs/undipooradhey.mp3','Undipooradhey - Sad Version', 'Hushaaru','images/hushaaru.jpeg')">
+              <img src="images/hushaaru.jpeg" class="card-img-top" alt="Raghuvaran B-tech">
+              <div class="card-body bg-dark" style="color: white; border-radius: 0px 0px 10px 10px; height: 75px;">
+                <h8 class="card-title"><b>Undiporaadhey</b></h8>
+                <p class="card-text">Hushaaru</p>
+                <div class="play-icon1">
+                  <i class="fas fa-play play-icon"></i>
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="Melody" id="Party">
+          <div class="title">
+            <h3>Party</h3>
+          </div>
+          <div id="songs-container">
+            <div class="card" style="width: 15rem; outline: none; border: none; border-radius: 40px;" onclick="playMusic('Songs/Party Songs/oy.mp3','Oy Oy', 'Oy','images/oy.webp')">
+              <img src="images/oy.webp" class="card-img-top" alt="Raghuvaran B-tech">
+              <div class="card-body bg-dark" style="color: white; border-radius: 0px 0px 10px 10px; height: 75px;">
+                <h8 class="card-title"><b>Oy oy</b></h8>
+                <p class="card-text">Oy</p>
+                <div class="play-icon1">
+                  <i class="fas fa-play play-icon"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="width: 15rem; outline: none; border: none; border-radius: 40px;" onclick="playMusic('Songs/Party Songs/college.mp3','College Papa', 'MAD','images/mad.jpg')">
+              <img src="images/mad.jpg" class="card-img-top" alt="Raghuvaran B-tech">
+              <div class="card-body bg-dark" style="color: white; border-radius: 0px 0px 10px 10px; height: 75px;">
+                <h8 class="card-title"><b>College Papa</b></h8>
+                <p class="card-text">Mad</p>
+                <div class="play-icon1">
+                  <i class="fas fa-play play-icon"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="width: 15rem; outline: none; border: none; border-radius: 40px;"onclick="playMusic('Songs/Party Songs/odiyamma.mp3','Odiyamma Heatu', 'Hi Nanna','images/odiyamma.jpg')">
+              <img src="images/odiyamma.jpg" class="card-img-top" alt="Raghuvaran B-tech">
+              <div class="card-body bg-dark" style="color: white; border-radius: 0px 0px 10px 10px; height: 75px;">
+                <h8 class="card-title"><b>Odiyamma</b></h8>
+                <p class="card-text">Hi Nanna</p>
+                <div class="play-icon1">
+                  <i class="fas fa-play play-icon"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="width: 15rem; outline: none; border: none; border-radius: 40px;" onclick="playMusic('Songs/Party Songs/tere.mp3','Tere Pyaar Mein', 'Thu Jhoothi Mein Makkaar','images/tere pyaar.jpg')">
+              <img src="images/tere pyaar.jpg" class="card-img-top" alt="Raghuvaran B-tech">
+              <div class="card-body bg-dark" style="color: white; border-radius: 0px 0px 10px 10px; height: 75px;">
+                <h8 class="card-title"><b>Tere Pyaar Mein</b></h8>
+                <p class="card-text">Thu Jhoothi Mein Makkaar</p>
+                <div class="play-icon1">
+                  <i class="fas fa-play play-icon"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="width: 15rem; outline: none; border: none; border-radius: 40px;" onclick="playMusic('Songs/Party Songs/maaster.mp3','Maastaru Maastaru', 'Sir','images/sir.jpg')">
+              <img src="images/sir.jpg" class="card-img-top" alt="Raghuvaran B-tech">
+              <div class="card-body bg-dark" style="color: white; border-radius: 0px 0px 10px 10px; height: 75px;">
+                <h8 class="card-title"><b>Maastaru Maastaru</b></h8>
+                <p class="card-text">Sir</p>
+                <div class="play-icon1">
+                  <i class="fas fa-play play-icon"></i>
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
+      </main>
+      <div class="fixed-bottom bg-dark p-1">
+        <div class="square">
+          <img src="images/aashique.jpg" alt="" style="height: 70px;">
+        </div>
+        <div class="text">
+          <h8>Song</h8>
+          <p>Movie</p>
+        </div>
+        <div class="music-player">
+          <i class="bi bi-skip-backward-circle-fill"></i>
+          <i class="bi bi-play-circle-fill" onclick="togglePlayPause()"></i>
+          <i class="bi bi-pause-circle-fill" onclick="togglePlayPause()" style="display: none;"></i>
+          <i class="bi bi-skip-forward-circle-fill"></i>
+        </div>
+        <div class="like">
+          <i class="bi bi-heart"></i>
+          <i class="bi bi-download"></i>
+          <i class="bi bi-music-note-list"></i>
+          <i class="bi bi-volume-up"></i>
+        </div>
+    </div>
+</body>
+</html>
